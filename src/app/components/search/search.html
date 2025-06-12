@@ -1,0 +1,35 @@
+<div class="d-flex gap-2 mb-3">
+  <form class="search-form" (submit)="onSearch()">
+    <div class="form-row">
+      <label class="form-label">Zona:</label>
+      <label>Zona:</label>
+      <select [(ngModel)]="selectedPointLabel" name="point" required>
+        <option value="" disabled selected>Seleccione una zona</option>
+        <option *ngFor="let point of predefinedPoints" [value]="point.label">{{ point.label }}</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label class="form-label">Radio (km):</label>
+      <input
+        type="number"
+        [(ngModel)]="radius"
+        name="radius"
+        class="radius-input"
+        min="1"
+        max="50"
+        required
+      />
+    </div>
+    <div class="div-container">
+      <button class="btn btn-primary btn-sm" type="submit"  [disabled]="isLoading">
+        <span *ngIf="!isLoading">Buscar por zona</span>
+        <span *ngIf="isLoading" class="spinner"></span>
+      </button>
+    </div>
+  </form>
+
+  <div *ngIf="coordinates">
+    <p><strong>Lat:</strong> {{ coordinates.lat }}</p>
+    <p><strong>Lng:</strong> {{ coordinates.lon }}</p>
+  </div>
+</div>
