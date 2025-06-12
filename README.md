@@ -14,8 +14,7 @@ Proyecto realizado en Angular, que consume una API, para mostrar Peliculas Filma
 
 1. Cloná el repositorio si no lo hiciste:
 
-git clone https://github.com/RodrigoDiaz24/MoviesChallenge.git
-cd MoviesChallenge/Frontend
+git clone https://github.com/RodrigoDiaz24/MoviesChallengeFrontend.git
 
 
 2. Instalá las dependencias:
