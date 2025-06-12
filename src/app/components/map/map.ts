@@ -72,7 +72,6 @@ export class Map implements AfterViewInit, OnChanges{
     );
 
     this.map.fitBounds(bounds, { padding: [50, 50] });
-    console.log('Centrando mapa en markers:', this.movies.length);
   } 
 
   private clearMarkers(): void {
