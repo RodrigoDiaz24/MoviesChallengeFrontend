@@ -50,9 +50,9 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'MoviesSearchFE'
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }} 
           package: .
 
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_84374396232F463A8E2C370696561E8E }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+
 
 
