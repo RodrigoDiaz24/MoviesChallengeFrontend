@@ -16,7 +16,7 @@ export interface Movie {
   providedIn: 'root'
 })
 export class MoviesService {
-  private apiUrl = 'https://localhost:7013/api/movies'; 
+  private apiUrl = 'moviesearch-ekcybggphmczdehv.westeurope-01.azurewebsites.net/api/movies'; 
 
   constructor(private http: HttpClient) {}
 
