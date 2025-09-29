@@ -1,5 +1,12 @@
+@import "~leaflet/dist/leaflet.css";
+
 #map {
   height: 400px;
   width: 100%;
   margin-top: 20px;
+}
+
+.leaflet-container .leaflet-marker-icon,
+.leaflet-container .leaflet-marker-shadow {
+  background-image: url('/assets/leaflet/marker-icon.png');
 }

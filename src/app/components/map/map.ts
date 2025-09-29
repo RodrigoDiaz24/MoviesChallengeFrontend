@@ -1,6 +1,5 @@
 import { Component, Input, OnChanges, SimpleChanges, AfterViewInit } from '@angular/core';
 import * as L from 'leaflet';
-import "leaflet/dist/leaflet.css";
 import { Movie } from '../../services/movies.service';
 
 const iconDefault = L.icon({
