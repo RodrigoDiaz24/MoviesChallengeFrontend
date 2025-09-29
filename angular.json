@@ -24,7 +24,7 @@
               {
                 "glob": "**/*",
                 "input": "src/assets/leaflet",
-                "output": "/assets/leaflet//"
+                "output": "/assets/leaflet/"
               }
             ],
             "styles": [
