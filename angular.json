@@ -23,8 +23,8 @@
               "src/assets",
               {
                 "glob": "**/*",
-                "input": "node_modules/leaflet/dist/images",
-                "output": "assets/images/"
+                "input": "src/assets/leaflet",
+                "output": "/assets/leaflet//"
               }
             ],
             "styles": [

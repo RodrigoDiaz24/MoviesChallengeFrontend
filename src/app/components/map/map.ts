@@ -3,6 +3,13 @@ import * as L from 'leaflet';
 import "leaflet/dist/leaflet.css";
 import { Movie } from '../../services/movies.service';
 
+const iconDefault = L.icon({
+  iconUrl: 'assets/leaflet/marker-icon.png',
+  iconRetinaUrl: 'assets/leaflet/marker-icon-2x.png',
+  shadowUrl: 'assets/leaflet/marker-shadow.png'
+});
+L.Marker.prototype.options.icon = iconDefault;
+
 @Component({
   selector: 'app-map',
   standalone: true,
